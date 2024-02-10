@@ -21,6 +21,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger('NetworkAnomalyDetector')
 
+# Suppress warnings
+warnings.filterwarnings("ignore")
+
 
 class PacketFeatureExtractor:
     """
